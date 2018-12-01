@@ -47,7 +47,7 @@ app.use('/metrics', metricsRouter);
 //this endpoint performs cpu-intensive calculations
 app.get('/generate-cpu-load', function(req, res, next) {
   var val = 0.0001
-  for (i = 0; i < 5000000000; i++) {
+  for (i = 0; i < 500000000; i++) {
     val += Math.sqrt(val);
   }
 	console.log('Doing a bunch of calculations!')
